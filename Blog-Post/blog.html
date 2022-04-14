@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Blogs</title>
+  </head>
+  <body class="container">
+    <style>
+      body {
+        border-top: 10px solid #1098ad;
+        position: relative;
+      }
+      h1 {
+        font-style: italic;
+        font-size: 28px;
+
+      }
+      .container {
+        width: 1400px;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        gap: 50px;
+      }
+      .like {
+        position: absolute;
+        bottom: 50;
+        padding: 20;
+        text-transform: uppercase;
+        font-size: 24px;
+        right: 0;
+      }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Blogs</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+      </ol>
+    </nav>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/blog-2.jpg" class="d-block w-100" alt="laptop" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Frontend and backend</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              doloremque fugit voluptatibus amet adipisci earum eos consectetur
+              quasi ratione, nihil quidem sed architecto nam, ipsam impedit
+              corrupti et expedita odio..
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/blog-3.jpg" class="d-block w-100" alt="coding image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Backend</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit
+              amet nam harum architecto unde necessitatibus itaque officia
+              facere voluptates..
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/blog-4.jpg"
+            class="d-block w-100"
+            alt="computer setup"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Java Css HTML</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              possimus architecto, veritatis, animi corrupti tempora voluptatum
+              eaque tempore dicta nisi rem explicabo consequuntur laborum iste..
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1>Bootstrap <span class="badge rounded-pill bg-primary">New</span></h1>
+    <div class="row">
+      <div class="card" style="width: 18rem">
+        <img src="img/blog-1.jpg" class="card-img-top" alt="..." height="350" />
+        <div class="card-body">
+          <h5 class="card-title">Bootstrap</h5>
+          <p class="card-text">
+            Get started with Bootstrap, the world's most popular framework for
+            building responsive, mobile-first sites, with jsDelivr and a
+            template starter page.
+            It simplifies the development of web pages and as a free and open-source tool, it is fast and easy for web development.
+          </p>
+          <a href="#" class="btn btn-primary">know More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="img/blog-5.jpg" class="card-img-top" alt="..." height="350" />
+        <div class="card-body">
+          <h5 class="card-title">Skeleton</h5>
+          <p class="card-text">
+            Skeleton is a simple, responsive, lightweight boilerplate and a CSS
+            framework. It consists of a 12-column fluid grid, consisting of rows
+            and columns. It is built keeping in mind the mobile framework. It is
+            easy to start and needs the least compilation. It is best for a
+            small project since it styles only major standard HTML elements and
+            considers a grid.
+          </p>
+          <a href="#" class="btn btn-primary">know More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="img/blog-6.jpg" class="card-img-top" alt="..." height="350" />
+        <div class="card-body">
+          <h5 class="card-title">Bulma</h5>
+          <p class="card-text">
+            As one of the popular alternatives of Bootstrap, Bulma is a
+            modernized CSS framework that is free, open-source, and offers
+            competitive frontend components. It needs no prior knowledge of CSS
+            framework and developers can easily create responsive web
+            interfaces. It has a comprehensive flexbox grid, a wide range of
+            colors and helps in building good-looking websites with ease.
+            <a href="#" class="btn btn-primary">know More</a>
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="img/blog-7.jpg" class="card-img-top" alt="..." height="350" />
+        <div class="card-body">
+          <h5 class="card-title">Pure.css</h5>
+          <p class="card-text">
+            Considered as a very light weighted framework, Pure.css is apt for
+            small projects since it has a bunch of CSS frameworks clustered
+            together. Since it is designed especially for mobile devices, it
+            helps developers build responsive layouts with the use of grids,
+            menus, forms, buttons, etc. Despite being tiny in size, it offers
+            great performance and output.Pure.css
+          </p>
+          <a href="#" class="btn btn-primary">know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="text-muted">© 2021 Blog, Inc</span>
+
+          <button type="button" class="btn like btn-outline-success">❤ like</button>
+        </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
